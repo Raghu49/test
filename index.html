@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML video autoplay Attribute</title>
+</head>
+
+<body>
+		<h1 style="color:green;">GeeksforGeeks</h1>
+
+		<h3>HTML video autoplay Attribute</h3>
+
+		<video controls width="500" height="500" loop muted id="autoplay">
+			<source src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"
+					type="video/mp4">
+		</video>
+		
+		<input type="text" id="myInput1" onchange="myChangeFunction(this)" placeholder="type something then tab out" />
+<input type="text" id="myInput2" />
+
+<script type="text/javascript">
+  function myChangeFunction(input1) {
+    var input2 = document.getElementById('myInput2');
+    document.getElementById('myInput2')=input2
+    
+  }
+</script>
+	<script>
+	window.onload=function(){
+	document.getElementById("autoplay").play();
+	}
+	</script>
+	
+</body>
+
+</html>
+
